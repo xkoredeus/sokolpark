@@ -1,0 +1,593 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+    h3
+        font-size: 30px
+    header
+        .header_phone_number
+            a
+                font-size: 26px
+        .menu
+            margin: 29px 0 0 0
+            ul
+                li
+                    margin: 0 4px 0 0
+                    a
+                        padding: 0 18px 0 0
+        .slogan
+            h2
+                font-size: 40px
+        .header_slider_arrow_back
+            left: 120px
+            bottom: 27%
+        .header_slider_arrow_next
+            right: 120px
+            bottom: 28%
+        .mouse
+            bottom: 5%
+        .slider_icon
+
+    .advantages 
+        h3
+            &::before
+                width: 130px
+            &::after
+                width: 130px
+        .advantages_blocks
+            h4
+                font-size: 15px
+    .presentation
+        .presentation_inner
+            &::before
+                left: -9%
+            &::after
+                right: -9%
+    .about_village
+        h3
+            &::before
+                width: 110px
+            &::after
+                width: 110px
+        p
+            margin: 0
+            font-size: 16px
+    .design_home 
+        h3
+            &::before
+                width: 220px
+            &::after
+                width: 220px
+    .arrow_design_slider_back
+        position: absolute
+        top: 0
+        left: -1%
+        height: 74%
+        width: 30px
+        background-color: #cccccc
+        &::before
+            top: 45%
+            left: 10%
+    .arrow_design_slider_next
+        position: absolute
+        top: 0
+        right: -1%
+        height: 74%
+        width: 30px
+        background-color: #cccccc
+        &::before
+            top: 45%
+            right: 10%
+            width: 25px
+            height: 50px
+            background-size: contain
+            background-repeat: no-repeat
+    footer
+        .footer_menu
+            ul
+                li
+                    a
+                        padding: 0 0 0 22px
+    .slider_land
+        .go-plan
+            right: 20px
+    .about_object 
+        h2
+            &::before
+                width: 320px
+            &::after
+                width: 320px
+    .overlay_slider 
+        .modal_wrapper_fixed
+            margin-left: -50%
+            .wrapper 
+                .modal_project_title
+                    font-size: 30px
+                    &::before
+                        width: 300px
+                        top: 21px
+                    &::after
+                        width: 300px
+                        top: 21px
+        .close_overlay
+            top: 1%
+            right: 30px
+    .about_village
+        .about_village_text
+            margin: 58px 0 0 0
+// ≥992px
++media-breakpoint-down(md)
+    .gen_plan_nav
+        top: 10%
+    h3
+        font-size: 25px
+    header
+        .menu
+            ul 
+                li
+                    margin: 0
+                    a
+                        padding: 0 5px 0 0
+                        font-size: 11px
+                        &::after
+                            height: 7px
+                            right: 0
+        .header_phone_number
+            a
+                font-size: 18px
+            button
+                font-size: 14px
+                margin: 55px 0 0 0
+        .slogan
+            h2
+                font-size: 35px
+        .wrapper_slider_header
+            .header_slider
+                .header_slider_item
+                    .slider_text_wrapper
+                        width: 70%
+                        margin: 0 0 0 -36%
+                        .slider_text
+                            font-size: 13px
+                            letter-spacing: 0
+        .header_slider_arrow_next
+            bottom: 31%
+            right: 53px
+        .header_slider_arrow_back
+            bottom: 31%
+            left: 40px
+    .advantages
+        h3
+            &::before
+                width: 80px
+                top: 18px
+            &::after
+                width: 80px
+                top: 18px
+    .presentation
+        .presentation_inner
+            &::before
+                width: 50px
+                left: -4%
+            &::after
+                width: 50px
+                right: -4%
+            a
+                left: 30%
+                font-size: 25px
+                &::before
+                    left: -30%
+    .about_village
+        h3
+            &::before
+                top: 20px
+                left: 0
+                width: 75px
+            &::after
+                top: 20px
+                right: 0
+                width: 75px
+        .about_village_icon
+            margin: 40px 0 0 0
+            .engeneer
+                p
+                    padding: 0 0 0 110px
+            .sunset
+                margin: 60px 0 0 0
+                &::before
+                    width: 90px
+                    height: 77px
+                    background-size: cover
+                    top: 50px
+                p
+                    padding: 0 0 0 110px
+    .design_home 
+        h3
+            &::before
+                width: 150px
+                top: 20px
+            &::after
+                width: 150px
+                top: 20px
+    .arrow_design_slider_next
+        height: 67.5%
+    .arrow_design_slider_back
+        height: 67.5%
+    footer
+        .second_section
+            margin: 25px 0 0 0
+            p
+                text-align: center
+            .contact
+                text-align: center
+        .three_section
+            padding: 30px 0 40px 0
+            text-align: center
+            a
+                margin: 30px 0 0 0
+            .akticom
+                text-align: center
+                margin: 30px 0 0 0
+        .footer_menu
+            text-align: center
+    .slider_land
+        .go-plan
+            right: 30px
+            img
+                width: 150px
+        .go-home
+            &::before
+                left: 10px
+    .slider_land_icons
+        .land_area,
+        .gaz,
+        .water,
+        .canaliz
+            img
+                width: 59px
+    .about_object 
+        h2
+            &::before
+                width: 200px
+            &::after
+                width: 200px
+    .land_feedback 
+        .land_feedback_inner
+            &::before
+                width: 70px
+                left: -5%
+            &::after
+                width: 70px
+                right: -5%
+    .land_feedback
+        .land_feedback_inner
+            form
+                input[type=submit]
+                    position: relative
+                    width: 100%
+                    left: 0
+                    margin: 25px 0
+            .politic_conf
+                margin: 0
+    .overlay_slider 
+        .modal_wrapper_fixed
+            margin-left: -50%
+            .wrapper
+                .modal_slider
+                    .slick-list
+                        .modal_item
+                            width: 147px !important
+                            img
+                                width: 147px !important
+                .modal_project_title
+                    &::before
+                        width: 180px
+                    &::after
+                        width: 180px
+            .modal_home_area 
+                .life_area
+                    margin: 0
+    .design_home
+        .design_home_slider
+            .wrapper_item
+                .overlay
+                    a
+                        margin: 30px 0 0 0
+                        width: 172px
+                        height: 40px
+                        line-height: 32px
+                        &::before
+                            top: -20px   
+    .about_village
+        .about_village_text
+            margin: 19px 0 0 0
+// ≥768px
++media-breakpoint-down(sm)
+    header
+        min-height: 450px
+        .logo
+            .logo_inner
+                img
+                    width: 100%
+                    height: 41px 
+        .slogan
+            margin: 20px 0 0 0 
+            h2
+                font-size: 25px
+        .wrapper_slider_header
+            .header_slider
+                max-height: 450px
+                .header_slider_item
+                    min-height: 450px
+                    .slider_head_bg
+                        height: 450px
+                    .slider_text_wrapper
+                        top: 190px
+                        margin: 0 0 0 -35%
+                        .slider_icon
+                            top: -25%
+                        .slider_text
+                            font-size: 12px
+                            padding: 0 25px 20px 25px
+        .header_slider_arrow_back
+            bottom: 29%
+            left: 40px
+        .header_slider_arrow_next
+            bottom: 30%
+            right: 40px
+    .advantages
+        h3
+            &::before
+                display: none
+            &::after
+                display: none
+    .about_village
+        margin: 40px 0 0 0
+        h3
+            &::before
+                display: none
+            &::after
+                display: none
+        .about_village_text
+            margin: 20px 0 0 0
+    .design_home
+        h3
+            &::before
+                display: none
+            &::after
+                display: none
+    .arrow_design_slider_back
+        height: 70.3%
+        &::before
+            width: 20px
+            top: 40%
+            left: 15%
+    .arrow_design_slider_next
+        height: 70.3%
+        &::before
+            width: 20px
+            top: 40%
+            left: 15%
+    footer
+        .second_section
+            .contact
+                .address
+                    display: block
+                    text-align: center
+                address
+                    &::after
+                        display: none
+                    &::before
+                        left: 90px
+                    margin: 10px 0
+                .phone_footer
+                    display: block
+                    text-align: center
+                    &::before
+                        left: 110px
+                    &::after
+                        display: none
+                .social_footer
+                    display: block
+                    margin: 10px 0 0 0
+    .slider_land
+        min-height: 1000px
+        .slick-initialized
+            .slick-dots
+                bottom: -20%
+            .next-arrow
+                bottom: -20%
+            .prev-arrow
+                bottom: -20%
+    .about_object
+        h2
+            font-size: 25px
+            &::before
+                width: 120px
+                top: 20px
+            &::after
+                width: 120px
+                top: 20px
+    .land_feedback
+        .land_feedback_inner
+            &::before
+                width: 50px
+            &::after
+                width: 50px
+            p
+                text-align: center
+            h4
+                text-align: center
+    .overlay_slider
+        .modal_wrapper_fixed
+            .wrapper
+                .modal_project_title
+                    &::before
+                        width: 100px
+                    &::after
+                        width: 100px
+            .complectation_list
+                padding: 0 0 0 30px
+    
+// ≥576px
++media-breakpoint-down(xs)
+    header
+        .slogan
+            h2
+                font-size: 13px
+                margin: 35px 0 0 0
+        .wrapper_slider_header
+            .header_slider
+                .header_slider_item
+                    .slider_text_wrapper
+                        margin: 0 0 0 -39%
+                        width: 80%
+                        top: 210px
+                        .slider_head
+                            font-size: 16px
+                        .slider_text
+                            font-size: 9px
+                            padding: 0 5px 10px 5px
+                        .slider_icon
+                            top: -50%
+            .slick-dots
+                bottom: 80px
+            .slick-dots
+                li
+                    button
+                        &::before
+                            color: #ffffff
+        .header_slider_arrow_next
+            bottom: 35%
+            right: 20px
+            width: 20px
+            height: 40px
+            display: none
+        .header_slider_arrow_back
+            bottom: 34%
+            left: 20px
+            width: 20px
+            height: 40px
+            display: none
+    .advantages
+        margin: 50px 0 0 0
+        h3
+            font-size: 20px
+    .presentation
+        .presentation_inner
+            &::before
+                width: 20px
+            &::after
+                width: 20px
+            a
+                font-size: 18px
+                left: 27%
+                &::before
+                    width: 50px
+                    height: 50px
+                    background-size: contain
+    .about_village 
+        h3
+            font-size: 20px
+    .design_home_slider
+        .slick-dots
+            height: 30px
+            top: -43px
+        .slick-dotted
+            margin-bottom: 0
+    footer
+        .footer_menu
+            ul
+                li
+                    a
+                        &::after
+                            display: none
+        .second_section
+            .contact
+                address
+                    display: inline-block
+                    &::before
+                        left: -23px
+                .phone_footer
+                    display: inline-block
+                    &::before
+                        left: -23px
+    .slider_land
+        .go-plan
+            right: 30px
+            top: -165px
+            img
+                width: 100px
+            a
+                font-size: 14px
+        .go-home
+            &::before
+                left: 5px
+                top: 5px
+        .slider_land_icons
+            .land_area,
+            .gaz,
+            .water,
+            .canaliz
+                img
+                    margin: 0 auto
+                    float: none
+                    display: block
+                p
+                    text-align: center
+                    display: block
+                    margin: 10px 0 0 0
+    .about_object
+        h2
+            &::before
+                width: 80px
+            &::after
+                width: 80px
+    .land_feedback
+        .land_feedback_inner
+            &::before
+                width: 25px
+                left: -4%
+            &::after
+                width: 25px
+                right: -4%
+    .overlay_slider
+        .modal_wrapper_fixed
+            .wrapper
+                .modal_project_title
+                    &::before
+                        display: none
+                    &::after
+                        display: none
+                .modal_slider
+                    .slick-list
+                        .modal_item
+                            width: 46% !important
+                            img
+                                width: 100% !important
+                                height: auto !important
+                    .modal_slider_arrow_next
+                        right: 25px
+                    .modal_slider_arrow_back
+                        left: 25px
+    .slider_land
+        .slick-initialized
+            .slick-dots
+                left: 0
+    
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
