@@ -476,7 +476,7 @@
 				<div class="row design_slider">
 					<div class="col-xl-3 col-lg-3design_slider_item">
 						<div class="wrapper_item">
-							<img src="img/5_design/1.png" alt="">
+							<img src="img/5_design/grani.jpg" alt="">
 							<div class="overlay">
 								<p>Прекрасный дом для большой дружной семьи. Современная планировка, просторная терраса.</p>
 								<a href="#project__modal_1" data-fancybox data-options='{"touch" : false}' class="look_project">Посмотреть проект</a>
@@ -925,34 +925,34 @@
 	<script src="js/scripts.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 	<script>
-		// $('[data-fancybox]').fancybox({
-		//     afterLoad: function(){
-		//       $('.full_image').slick({
-		//         slidesToShow: 1,
-		//         slidesToScroll: 1,
-		//         arrows: false,
-		//         infinite: false,
-		//         fade: true,
-		//         asNavFor: '.modal_slider'
-		//       });
-		//       $('.modal_slider').slick({
-		//         slidesToShow: 1,
-		//         slidesToScroll: 1,
-		//         asNavFor: '.full_image',
-		//         dots: true,
-		//         centerMode: true,
-		//         infinite: false,
-		//         arrows: true,
-		//         prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
-		//         nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
-		//         focusOnSelect: true
-		//       });
-		//     },
-		//     afterClose: function(){
-		//       $('.full_image').slick('unslick');
-		//       $('.modal_slider').slick('unslick');
-		//     }
-		//   });
+		$('[data-fancybox]').fancybox({
+		    afterLoad: function(){
+		      $('.full_image').slick({
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        arrows: false,
+		        infinite: false,
+		        fade: true,
+		        asNavFor: '.modal_slider'
+		      });
+		      $('.modal_slider').slick({
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        asNavFor: '.full_image',
+		        dots: true,
+		        centerMode: true,
+		        infinite: false,
+		        arrows: true,
+		        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+		        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+		        focusOnSelect: true
+		      });
+		    },
+		    afterClose: function(){
+		      $('.full_image').slick('unslick');
+		      $('.modal_slider').slick('unslick');
+		    }
+		  });
 		// $('.fancybox-button').on('click', function() {
 		// 	$('.modal_item').trigger('click')
 		// });
