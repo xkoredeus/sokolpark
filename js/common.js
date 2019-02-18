@@ -92,7 +92,8 @@ $(function() {
     //     overlaySlider.classList.remove('overlay_slider_active');
     // }
 
-    $('.full_image').slick({
+    //Первый попап слайдеры
+    $('#project__modal_1 .full_image').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -101,7 +102,95 @@ $(function() {
         asNavFor: '.modal_slider'
       });
 
-    $('.modal_slider').slick({
+    $('#project__modal_1 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+    //Второй попап слайдеры
+    $('#project__modal_2 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_2 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+    //Третий попап слайдеры
+    $('#project__modal_3 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_3 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+    //Четвертый попап слайдеры
+    $('#project__modal_4 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_4 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+    //Пятый попап слайдеры
+    $('#project__modal_5 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_5 .modal_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.full_image',
@@ -114,6 +203,28 @@ $(function() {
         focusOnSelect: true
       });
 
+    //Шестой попап слайдеры
+    $('#project__modal_6 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_6 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
 
 //Мобильное меню
       let mobileMenu = document.querySelector('.mobile_menu_button_img');
@@ -150,6 +261,7 @@ $(function() {
         wrapperGenPlan.style.width = counter + '%';
     }
 });
+const modalMoreButton1 = document.querySelector('.popup__btn');
 const modalMoreButton = document.querySelector('.header_phone_number button');
 const modalMore = document.querySelector('.modal_learn_more_overlay');
 const closeMore = document.querySelector('.modal_learn_more img');
@@ -162,6 +274,13 @@ if(closeMore) {
 if (modalMoreButton) {
     modalMoreButton.onclick = function () {
         modalMore.classList.toggle('active_modal_more');
+    }
+}
+if (modalMoreButton1) {
+    modalMoreButton1.onclick = function(e) {
+        e.preventDefault();
+        modalMore.classList.toggle('active_modal_more');
+
     }
 }
 
@@ -244,8 +363,6 @@ myMap.geoObjects.add(myPlacemark)
  myMap.behaviors.disable('scrollZoom');
 }
 
-$(".look_project").on('click',function() {
-    $(".slick-slider").slick('reinit');
-});
+
 
 
