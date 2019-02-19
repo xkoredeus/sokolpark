@@ -226,6 +226,73 @@ $(function() {
         focusOnSelect: true
       });
 
+    //Седьмой попап слайдеры
+    $('#project__modal_7 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_7 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+
+    //Седьмой попап слайдеры
+    $('#project__modal_8 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_8 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
+
+    $('#project__modal_9 .full_image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        fade: true,
+        asNavFor: '.modal_slider'
+      });
+
+    $('#project__modal_9 .modal_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full_image',
+        dots: true,
+        centerMode: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<img class="modal_slider_arrow_back" src="img/8_modal_window/arrow_pre.png" alt="">',
+        nextArrow: '<img class="modal_slider_arrow_next" src="img/8_modal_window/arrow_next.png" alt="">',
+        focusOnSelect: true
+      });
 //Мобильное меню
       let mobileMenu = document.querySelector('.mobile_menu_button_img');
       if (mobileMenu != null) {
